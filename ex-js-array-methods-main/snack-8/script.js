@@ -21,3 +21,10 @@ const students = [
 
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
+
+//filtro gli studenti verificare se il nome è uguale a Marco Lanci. Quando lo trovo recupero la classe e la stampo
+for(let i = 0; i < students.length; i++){
+  if (students[i].name === "Marco Lanci"){
+    console.log(students[i].class);
+  }
+}
