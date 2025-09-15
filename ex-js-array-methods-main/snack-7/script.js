@@ -22,9 +22,5 @@ const students = [
 // Recupera i dati dello studente con id 2
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
 
-//uso un ciclo per individuare il secondo studente e stamparlo
-for (let i = 0 ; i < students.length; i++) {
-  if (i === 1){
-    console.log(students[i]);
-  }
-}
+const result = students.find(student => student.id === 2);
+console.log(result);
