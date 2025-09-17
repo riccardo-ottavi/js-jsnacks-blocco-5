@@ -7,7 +7,7 @@ const people = [
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
 
-//ciclo array di ogetti tirando fuori via via la proprietà name
-for (let i = 0; i < people.length; i++){
-  console.log(people[i].name);
-}
+
+people.forEach(people => {
+    console.log(people.name);
+});
